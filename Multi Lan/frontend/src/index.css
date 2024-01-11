@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #099d1d;
+}
+
+#back-ball {
+  left: -8rem;
+  top: -4rem;
+  height: 700px;
+  width: 700px;
+  filter: blur(60px);
+}
+#back-ball-2 {
+  right: 0;
+  bottom: 0;
+  height: 600px;
+  width: 600px;
+  filter: blur(60px);
+}
+
+#x-mark {
+  animation: rot 2s infinite;
+}
+
+#backdrop {
+  backdrop-filter: blur(100px);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#chatscreen::-webkit-scrollbar {
+  width: 5px;
+}
+#chatscreen::-webkit-scrollbar-thumb {
+  background-color: #7b93ff;
+  border-radius: 10px;
+}
+
+#chatContainer a {
+  text-decoration: underline;
+}
+
+@keyframes rot {
+  0% {
+      transform: rotate(0deg);
+  }
+  40% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
